@@ -1,0 +1,10 @@
+<jxb:bindings xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
+	jxb:extensionBindingPrefixes="xjc" version="2.0">
+	<jxb:globalBindings>
+		<xjc:serializable uid="1"/>
+		<xjc:javaType name="java.time.Instant" xmlType="xsd:dateTime" adapter="nl.clockwork.ebms.jaxb.InstantAdapter" />
+		<xjc:javaType name="java.time.Duration" xmlType="xsd:duration" adapter="nl.clockwork.ebms.jaxb.DurationAdapter" />
+	</jxb:globalBindings>
+</jxb:bindings>
